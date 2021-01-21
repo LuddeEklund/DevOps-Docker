@@ -1,0 +1,2 @@
+docker build -t frontend-10 .
+docker run -p 5000:5000 frontend-10

@@ -1,0 +1,20 @@
+# Make script executable
+chmod +x curler.sh
+
+# Build docker image
+> docker build -t curler .
+
+# Start container
+> docker run -it curler bin/bash
+
+#In the container
+touch curler.sh
+
+#Next, use the ls command to view permission on the script:
+ls -l curler.sh
+To execute the script, type:
+$ bash curler.sh
+
+Input website:
+helsinki.fi
+
