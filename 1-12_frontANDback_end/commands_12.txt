@@ -1,0 +1,10 @@
+/home/ludvig/1-12/backend-example-docker:
+docker build -t back .
+docker run -p 8000:8000 back
+
+/home/ludvig/1-12/frontend-example-docker:
+docker build -t front .
+docker run -p 5000:5000 front
+
+
+
