@@ -1,0 +1,11 @@
+#Start docker
+PS % docker run -it --name ubuntu ubuntu 
+root@:/# sh -c 'echo "Input website:"; read website; echo "Searching..."; sleep 1; curl http://$website '
+ERROR sh:1 curl: not found
+
+# Install curl 
+root@:/# apt-get update; apt-get install curl
+root@:/# sh -c 'echo "Input website:"; read website; echo "Searching..."; sleep 1; curl http://$website '
+#Give input
+helsinki.fi
+root@: /# exit
